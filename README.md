@@ -7,8 +7,6 @@
 [![Lisensi: MIT](https://img.shields.io/badge/License-MIT-lightgrey.svg)]()
 
 Temperature forecasting over Sumatra using ERA5 reanalysis data and Random Forest regression. Includes data preprocessing, model training, evaluation, and spatial visualization.
-...
-Temperature forecasting over Sumatra using ERA5 reanalysis data and Random Forest regression. Includes data preprocessing, model training, evaluation, and spatial visualization.
 
 ## 📂 Dataset
 
