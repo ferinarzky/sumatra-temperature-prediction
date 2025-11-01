@@ -1,2 +1,3 @@
-# sumatra-temperature-prediction
-Random Forest model for temperature prediction over Sumatra in May 2024
+# sumatra-temperature-forecasting
+Temperature forecasting over Sumatra using ERA5 reanalysis data and Random Forest regression. Includes data preprocessing, model training, evaluation, and spatial visualization.
+
