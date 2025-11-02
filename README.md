@@ -35,11 +35,11 @@ This project uses 7 meteorological parameters as input features to predict surfa
 | :--- | :--- |
 | `latitude`, `longitude` | Location coordinates. |
 | **`u_10`, `v_10`** | Zonal (u) and meridional (v) wind components at 10 meters height. |
-| **`d2m`** | Dewpoint Temperature (Humidity indicator) |
+| **`d2m`** | Dewpoint Temperature (Humidity indicator). |
 | **`SST`** | Sea Surface Temperature. |
 | **`MSL`** | Mean Sea Level Pressure. |
 | **`SP`** | Surface Pressure. |
-| **Target (Y)** | Description |
+| **Target (Y)** | Description. |
 | **`t2m`** (temperature) | Air temperature at 2 meters height (Prediction target). |
 
 > This repository includes a **sample dataset**.  
@@ -49,12 +49,12 @@ This project uses 7 meteorological parameters as input features to predict surfa
 
 1. **Data Period:** January, February, March, April, and May 2024, specifically between 10:00 AM and 12:00 PM Jakarta Time (WIB).
 2. **Total Data Points:** 795.717 records.
-3. **Pembagian Data:**
+3. **Split Data:**
     * **Data Training:** **Januari - April 2024** used for training the model.
     * **Data Testing/Validation:** **May 2024** used for testing and validating the program.
     * **Train/Test Split Ratio:** 75% Training / 25% Testing.
-4.  **Konfigurasi Random Forest:**
-    * **Algoritma:** Random Forest Regressor (Scikit-learn).
+4.  **Random Forest Configuration:**
+    * **Algorithm:** Random Forest Regressor (Scikit-learn).
     * **Hyperparameter:** `n_estimator` = 200.
       
 ## 🚀 How to Run the Model
