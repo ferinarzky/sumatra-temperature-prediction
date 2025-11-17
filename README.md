@@ -10,12 +10,12 @@ Temperature forecasting over Sumatra using ERA5 reanalysis data and Random Fores
 
 ## 📂 Dataset
 
-This project uses **ERA5 reanalysis climate data** for temperature prediction over Sumatra in 2024.
+This project uses **ERA5 reanalysis climate data (Hourly data on single levels from 1940 to present)** for temperature prediction over Sumatra in 2024.
 
 Currently included:
 - `data/era5_sumatra_202401.csv` — sample data (January 2024)
 
-Full merged dataset (~53MB) is **not uploaded** due to GitHub file size limitations.
+Full merged dataset (53MB) is **not uploaded** due to GitHub file size limitations.
 It will be shared via cloud storage or Git LFS in the future.
 
 **Source:** ERA5 — Copernicus Climate Data Store  
