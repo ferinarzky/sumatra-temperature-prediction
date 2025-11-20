@@ -4,7 +4,7 @@
 [![Algorithm: Random Forest Regressor](https://img.shields.io/badge/Algorithm-Random%20Forest%20Regressor-orange.svg)]()
 [![Accuracy (R²): 99.61%](https://img.shields.io/badge/R%C2%B2%20Score-99.61%25-brightgreen.svg)]()
 [![Language: Python 3.9](https://img.shields.io/badge/Language-Python%203.9-blue.svg)](https://www.python.org/)
-[![License: MIT](https://img.shields.io/badge/License-MIT-lightgrey.svg)]()
+[![License: MIT](https://img.shields.io/badge/License-MIT-lightgrey.svg)](LICENSE)
 
 Temperature forecasting over Sumatra using ERA5 reanalysis data and Random Forest regression. Includes data preprocessing, model training, evaluation, and spatial visualization.
 
