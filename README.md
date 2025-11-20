@@ -84,7 +84,7 @@ The model was tested on May 2024 data and showed the following results:
 
 The most important outcome of this project is the Temperature Prediction Map for May 2024, validated by the Random Forest model.
 
-![Temperature Map Prediction]("Temperature Map Prediction in May 2024.png")
+![Temperature Map Prediction](temperature_map_prediction_may2024.png)
 
 **Validation Conclusion:**
 The model's predictions show average temperatures stable around $\mathbf{27^{\circ}C}$ to $\mathbf{28^{\circ}C}$ across Sumatra. This map serves as evidence of the successful application of a Machine Learning model in mapping and forecasting monthly temperature patterns based on ERA5 data.
