@@ -42,7 +42,7 @@ https://cds.climate.copernicus.eu
 ## 🧪 Data Description <a name="data-description"></a>
 The dataset contains:
 * Surface temperature at 2 meters (`t2m`)
-* Wind components (`u10`, `v10`)
+* Wind components (`u_10`, `v_10`)
 * Dewpoint temperature (`d2m`)
 * Sea surface temperature (`SST`)
 * Mean sea level pressure (`MSL`)
@@ -55,7 +55,7 @@ All data originates from **ERA5 reanalysis**, which represents modeled atmospher
 
 ## 🧱 Feature Structure <a name="feature-structure"></a>
 
-This project uses 7 meteorological parameters as input features to predict surface temperature (t2m) as the target/label.
+The model leverages several meteorological and spatial features (**inputs X**) to predict the 2 m air temperature (**target Y**).
 
 | Input Features (X) | Descriptions |
 | :--- | :--- |
@@ -65,7 +65,9 @@ This project uses 7 meteorological parameters as input features to predict surfa
 | **`SST`** | Sea Surface Temperature. |
 | **`MSL`** | Mean Sea Level Pressure. |
 | **`SP`** | Surface Pressure. |
-| **Target (Y)** | Description. |
+
+| Target (Y) | Description |
+| :--- | :--- |
 | **`t2m`** (temperature) | Air temperature at 2 meters height (Prediction target). |
 
 > This repository includes a **sample dataset**.  
