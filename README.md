@@ -12,19 +12,19 @@ Temperature forecasting over Sumatra using ERA5 reanalysis data and Random Fores
 
 ## 📌 Table of Contents
 
-* [Dataset](#dataset)
-* [Data Description](#data-description)
-* [Feature Structure](#feature-structure)
-* [Methodology and Model Configuration](#methodology-and-model-configuration)
-* [How to Run The Model](#how-to-run-the-model)
-* [Model Performance](#model-performance)
-* [Visualization](#visualization)
-* [Project Structure](#project-structure)
-* [Author](#author)
+- [Dataset](#dataset)
+- [Data Description](#data-description)
+- [Feature Structure](#feature-structure)
+- [Methodology and Model Configuration](#methodology-and-model-configuration)
+- [How to Run The Model](#how-to-run-the-model)
+- [Model Performance](#model-performance)
+- [Visual Proof: Temperature Prediction Map for May 2024](#visual-proof)
+- [Project Structure](#project-structure)
+- [Author](#author) 
 
 ---
 
-## 📂 Dataset
+## 📂 Dataset <a name="dataset"></a>
 
 This project uses **ERA5 reanalysis climate data (Hourly data on single levels from 1940 to present)** for temperature prediction over Sumatra in 2024.
 
@@ -39,7 +39,7 @@ https://cds.climate.copernicus.eu
 
 ---
 
-## 🧪 Data Description
+## 🧪 Data Description <a name="data-description"></a>
 The dataset contains:
 * Surface temperature at 2 meters (`t2m`)
 * Wind components (`u10`, `v10`)
@@ -53,7 +53,7 @@ All data originates from **ERA5 reanalysis**, which represents modeled atmospher
 
 ---
 
-## 🧱 Feature Structure
+## 🧱 Feature Structure <a name="feature-structure"></a>
 
 This project uses 7 meteorological parameters as input features to predict surface temperature (t2m) as the target/label.
 
@@ -73,7 +73,7 @@ This project uses 7 meteorological parameters as input features to predict surfa
 
 ---
 
-## ⚙️ Methodology and Model Configuration
+## ⚙️ Methodology and Model Configuration <a name="methodology-and-model-configuration"></a>
 
 1. **Data Period:** January, February, March, April, and May 2024, specifically between 10:00 AM and 12:00 PM Jakarta Time (WIB).
 2. **Total Data Points:** 795.717 records.
@@ -87,7 +87,7 @@ This project uses 7 meteorological parameters as input features to predict surfa
 
 ---
 
-## 🚀 How to Run The Model
+## 🚀 How to Run The Model <a name="how-to-run-the-model"></a>
 
 ```bash
 # Install dependencies
@@ -102,7 +102,7 @@ python src/plot_maps.py
 ```
 ---
 
-## 📈 Key Results and Prediction Validation
+## 📈 Model Performance <a name="model-performance"></a>
 
 The model was tested on May 2024 data and showed the following results:
 
@@ -111,7 +111,9 @@ The model was tested on May 2024 data and showed the following results:
 | **Accuracy (R-squared)** | **99.61%** | The model fits the data very well, explaining 99.61% of the temperature variability in May. |
 | **Mean Absolute Error (MAE)** | **$0.39^{\circ}C$** | Very low error level, demonstrating the model's ability to accurately predict actual temperatures in May 2024. |
 
-## 🗺️ Visual Proof: Temperature Prediction Map for May 2024
+---
+
+## 🗺️ Visual Proof: Temperature Prediction Map for May 2024 <a name="visual-proof"></a>
 
 The most important outcome of this project is the Temperature Prediction Map for May 2024, validated by the Random Forest model.
 
@@ -122,7 +124,7 @@ The model's predictions show average temperatures stable around $\mathbf{27^{\ci
 
 ---
 
-## Project Structure
+## 🧠 Project Structure <a name="project-structure"></a>
 
 ```
 sumatra-temperature-prediction/
@@ -145,12 +147,12 @@ sumatra-temperature-prediction/
 
 ---
 
-## 👩‍💻 Author
+## 👩‍💻 Author <a name="author"></a>
 
 **Ferina Rizky Kurniawati**  
 Data Science & Climate Modeling Enthusiast  
 📍 Indonesia  
-📧 Email: **[Ferinarzky@gmail.com](mailto:Ferinarzky@gmail.com)**
+📧 Email: **[Ferinarzky@gmail.com](mailto:Ferinarzky@gmail.com)**  
 🔗 LinkedIn: **[www.linkedin.com/in/ferinarizkykurniawati](http://www.linkedin.com/in/ferinarizkykurniawati)**
 
 
