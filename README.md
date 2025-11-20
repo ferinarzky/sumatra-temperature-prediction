@@ -8,6 +8,22 @@
 
 Temperature forecasting over Sumatra using ERA5 reanalysis data and Random Forest regression. Includes data preprocessing, model training, evaluation, and spatial visualization.
 
+---
+
+## 📌 Table of Contents
+
+* [Dataset](#dataset)
+* [Data Description](#data-description)
+* [Feature Structure](#feature-structure)
+* [Methodology and Model Configuration](#methodology-and-model-configuration)
+* [How to Run The Model](#how-to-run-the-model)
+* [Model Performance](#model-performance)
+* [Visualization](#visualization)
+* [Project Structure](#project-structure)
+* [Author](#author)
+
+---
+
 ## 📂 Dataset
 
 This project uses **ERA5 reanalysis climate data (Hourly data on single levels from 1940 to present)** for temperature prediction over Sumatra in 2024.
@@ -21,13 +37,23 @@ It will be shared via cloud storage or Git LFS in the future.
 **Source:** ERA5 — Copernicus Climate Data Store  
 https://cds.climate.copernicus.eu
 
-## Data Description
-- Temperature data (2m air temperature).
-- Sumatra region.
-- Monthly aggregated dataset.
-- Reanalysis model (not observational station data).
+---
 
-## Data Structure (Full Features)
+## 🧪 Data Description
+The dataset contains:
+* Surface temperature at 2 meters (`t2m`)
+* Wind components (`u10`, `v10`)
+* Dewpoint temperature (`d2m`)
+* Sea surface temperature (`SST`)
+* Mean sea level pressure (`MSL`)
+* Surface pressure (`SP`)
+* Latitude & longitude grid points
+
+All data originates from **ERA5 reanalysis**, which represents modeled atmospheric conditions using ECMWF systems.
+
+---
+
+## 🧱 Feature Structure
 
 This project uses 7 meteorological parameters as input features to predict surface temperature (t2m) as the target/label.
 
@@ -45,19 +71,23 @@ This project uses 7 meteorological parameters as input features to predict surfa
 > This repository includes a **sample dataset**.  
 > Full dataset available upon request.
 
+---
+
 ## ⚙️ Methodology and Model Configuration
 
 1. **Data Period:** January, February, March, April, and May 2024, specifically between 10:00 AM and 12:00 PM Jakarta Time (WIB).
 2. **Total Data Points:** 795.717 records.
 3. **Split Data:**
-    * **Data Training:** **Januari - April 2024** used for training the model.
-    * **Data Testing/Validation:** **May 2024** used for testing and validating the program.
+    * **Data Training:** January - April 2024
+    * **Data Testing/Validation:** May 2024
     * **Train/Test Split Ratio:** 75% Training / 25% Testing.
 4.  **Random Forest Configuration:**
     * **Algorithm:** Random Forest Regressor (Scikit-learn).
     * **Hyperparameter:** `n_estimator` = 200.
-      
-## 🚀 How to Run the Model
+
+---
+
+## 🚀 How to Run The Model
 
 ```bash
 # Install dependencies
@@ -70,17 +100,18 @@ python src/train_model.py
 python src/plot_maps.py
 
 ```
+---
 
 ## 📈 Key Results and Prediction Validation
 
 The model was tested on May 2024 data and showed the following results:
 
-| Metrik Evaluasi | Nilai | Interpretasi |
+| Evaluation Metrics | Value | Interpretation |
 | :--- | :--- | :--- |
 | **Accuracy (R-squared)** | **99.61%** | The model fits the data very well, explaining 99.61% of the temperature variability in May. |
 | **Mean Absolute Error (MAE)** | **$0.39^{\circ}C$** | Very low error level, demonstrating the model's ability to accurately predict actual temperatures in May 2024. |
 
-## Visual Proof: Temperature Prediction Map for May 2024
+## 🗺️ Visual Proof: Temperature Prediction Map for May 2024
 
 The most important outcome of this project is the Temperature Prediction Map for May 2024, validated by the Random Forest model.
 
@@ -91,10 +122,35 @@ The model's predictions show average temperatures stable around $\mathbf{27^{\ci
 
 ---
 
+## Project Structure
+
+```
+sumatra-temperature-prediction/
+│
+├── data/
+│   └── era5_sumatra_202401.csv
+│
+├── images/
+│   └── temperature_map_may2024.png
+│
+├── src/
+│   ├── train_model.py
+│   └── plot_maps.py
+│
+├── README.md
+├── LICENSE
+├── requirements.txt
+└── .gitignore
+```
+
+---
+
 ## 👩‍💻 Author
 
 **Ferina Rizky Kurniawati**  
 Data Science & Climate Modeling Enthusiast  
 📍 Indonesia  
-📫 Email: *Ferinarzky@gmail.com*  
-LinkedIn: *www.linkedin.com/in/ferinarizkykurniawati*
+📧 Email: **[Ferinarzky@gmail.com](mailto:Ferinarzky@gmail.com)**
+🔗 LinkedIn: **[www.linkedin.com/in/ferinarizkykurniawati](http://www.linkedin.com/in/ferinarizkykurniawati)**
+
+
